@@ -42,11 +42,54 @@
             align-items: center;
             flex-direction: column;
             width:100%;
-            height:100vh;
         }
         .no-items {
             text-align:center;
             font-size: 18px;
+        }
+        .items-list {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            max-width: 900px;
+            justify-content: center;
+        }
+        .item {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin:20px;
+            width:250px;
+            height:350px;
+            border-radius: 20px;
+            background-color: #b3aaaa;
+        }
+        .item-img {
+            height:40%;
+            width:100%;
+            text-align: center;
+            background-color: #222;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        .item-desc {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width:100%;
+            height: 60%;
+            text-align: center;
+        }
+        .item-price {
+            margin:10px;
+        }
+        .item-qty {
+            margin:10px;
+        }
+        .remove-item {
+            margin:10px;
         }
         .line {
             width: 100%;
@@ -72,17 +115,53 @@
     </nav>
     <div class="main-container">
         <div class="items-list">
-            <div class="item1">
-                 <div class="item1-img">
+            <div class="item">
+                 <div class="item-img">
                  </div>
-                 <div class="item1-desc">
+                 <div class="item-desc"> 
+                    <div class="item-price">Price: &nbsp; $50</div>
+                    <div class="item-qty">Qty: &nbsp; + 3 -</div>
+                    <div class="remove-item">Remove</div>
                  </div>
             </div>
-            <div class="item2">
+            <div class="item">
+                 <div class="item-img">
+                 </div>
+                 <div class="item-desc">   
+                    <div class="item-price">Price: &nbsp; $50</div>
+                    <div class="item-qty">Qty: &nbsp; + 3 -</div>
+                    <div class="remove-item">Remove</div>
+                 </div>
             </div>
-            <div class="item3">
+            <div class="item">
+                <div class="item-img">
+                </div>
+                <div class="item-desc">                    
+                    <div class="item-price">Price: &nbsp; $50</div>
+                    <div class="item-qty">Qty: &nbsp; + 3 -</div>
+                    <div class="remove-item">Remove</div>
+                </div>
+           </div>
+            <div class="item">
+            <div class="item-img">
+            </div>
+            <div class="item-desc">   
+                <div class="item-price">Price: &nbsp; $50</div>
+                <div class="item-qty">Qty: &nbsp; + 3 -</div>
+                <div class="remove-item">Remove</div>
+            </div>
+            </div>
+            <div class="item">
+            <div class="item-img">
+            </div>
+            <div class="item-desc">   
+                <div class="item-price">Price: &nbsp; $50</div>
+                <div class="item-qty">Qty: &nbsp; + 3 -</div>
+                <div class="remove-item">Remove</div>
+            </div>
             </div>
     </div>
+    <div class="items-payment"> PAY: &nbsp; $250</div>
     </div>
     <footer>
         <div class="line"></div>
